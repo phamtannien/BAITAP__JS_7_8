@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Bài tập js buổi 7-8
+                        </div>
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >Nhập số nguyên</label>
+                             <input type="text" name="" id="txtNumber" class="form-control" >
+                           </div>
+                           <button class="btn btn-success" onclick="themSo()">thêm số</button>
+                        </div>
+                        <div id="footer" class="card-footer text-muted">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >Tổng số dương</label>
+                             <button class="btn btn-success" onclick="tongSoDuong()">Tính tổng</button>
+                          </div>
+                        </div>
+                        <div id="soDuong" class="card-footer text-muted">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >Đếm số dương</label>
+                             <button class="btn btn-success" onclick="demSoDuong()">Đếm</button>
+                          </div>
+                        </div>
+                        <div id="demDuong" class="card-footer text-muted">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >Tìm số nhỏ nhất</label>
+                             <button class="btn btn-success" onclick="soNhoNhat()">Tìm</button>
+                          </div>
+                        </div>
+                        <div id="soNho" class="card-footer text-muted">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >Tìm số dương nhỏ nhất</label>
+                             <button class="btn btn-success" onclick="soDuongNhoNhat()">Tìm</button>
+                          </div>
+                        </div>
+                        <div id="soDuongNho" class="card-footer text-muted">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >Tìm số chẵn cuối cùng</label>
+                             <button class="btn btn-success" onclick="soChanCuoiCung()">Tìm</button>
+                          </div>
+                        </div>
+                        <div id="soChanCuoi" class="card-footer text-muted">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >Đổi vị trí</label>
+                             <input id="viTri1"  type="number" placeholder="nhập vị trí thứ nhất">
+                             <input id="viTri2" type="number" placeholder="nhập vị trí thứ hai">
+                             <button class="btn btn-success" onclick="doiViTri()">Đổi chổ</button>
+                          </div>
+                        </div>
+                        <div id="sapXepViTri" class="card-footer text-muted">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >Sắp xếp tăng dần</label>
+                             <button class="btn btn-success" onclick="sapXepTangDan()">Sắp xếp</button>
+                          </div>
+                        </div>
+                        <div id="tangDan" class="card-footer text-muted">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >tìm số nguyên tố đầu tiên</label>
+                             <button class="btn btn-success" onclick="soNTDauTien()">Tìm</button>
+                          </div>
+                        </div>
+                        <div id="soNT" class="card-footer text-muted">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >Đếm số nguyên</label>
+                             <button class="btn btn-success" onclick="demSoNguyen()">Đếm</button>
+                          </div>
+                        </div>
+                        <div id="demSN" class="card-footer text-muted">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                           <div class="form-group">
+                             <label >So sánh số lượng số âm và dương</label>
+                             <button class="btn btn-success" onclick="soSanhSo()">so sánh</button>
+                          </div>
+                        </div>
+                        <div id="soSanh" class="card-footer text-muted">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Optional JavaScript -->
+                <script src="./main.js"></script>
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script
+                    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+            </body>
+        </html>
